@@ -60,14 +60,15 @@ export default function About() {
           {/* Content Column */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              About Arbor Experts
+              About TIMBERMEN TREE SERVICES
             </h2>
             <div className="w-20 h-1 bg-green-700 mb-8"></div>
 
             <p className="text-gray-700 mb-6 text-lg">
               With over 15 years of experience in the arboriculture industry,
-              Arbor Experts has been providing exceptional tree care services to
-              residential and commercial properties throughout the region.
+              TIMBERMEN TREE SERVICES has been providing exceptional tree care
+              services to residential and commercial properties throughout the
+              region.
             </p>
 
             <p className="text-gray-700 mb-8 text-lg">
