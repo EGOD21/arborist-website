@@ -27,7 +27,8 @@ const projects = [
     category: "Commercial",
     description:
       "Complete tree management plan for a large office complex, including seasonal maintenance.",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F0d69cafbcf5643d4bc082553ec8663ba",
   },
   {
     title: "Storm Damage Recovery",
