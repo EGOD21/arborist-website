@@ -48,7 +48,7 @@ export default function Navbar() {
             alt="TIMBERMEN TREE SERVICES"
             width={300}
             height={80}
-            className="h-12 w-auto flex-shrink-0"
+            className="h-16 w-auto flex-shrink-0"
           />
         </Link>
 
