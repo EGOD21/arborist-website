@@ -1,60 +1,79 @@
-"use client"
+"use client";
 
-import { useState, useRef } from "react"
-import Image from "next/image"
-import { motion, useInView } from "framer-motion"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useState, useRef } from "react";
+import Image from "next/image";
+import { motion, useInView } from "framer-motion";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const projects = [
   {
     title: "Historic Oak Preservation",
     category: "Preservation",
-    description: "Restoration and preservation of a 150-year-old oak tree in the city's historic district.",
-    image: "/placeholder.svg?height=600&width=800",
+    description:
+      "Restoration and preservation of a 150-year-old oak tree in the city's historic district.",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F0d69cafbcf5643d4bc082553ec8663ba",
   },
   {
     title: "Commercial Property Landscaping",
     category: "Commercial",
-    description: "Complete tree management plan for a large office complex, including seasonal maintenance.",
+    description:
+      "Complete tree management plan for a large office complex, including seasonal maintenance.",
     image: "/placeholder.svg?height=600&width=800",
   },
   {
     title: "Storm Damage Recovery",
     category: "Emergency",
-    description: "Emergency response and cleanup after severe storm damage to residential properties.",
+    description:
+      "Emergency response and cleanup after severe storm damage to residential properties.",
     image: "/placeholder.svg?height=600&width=800",
   },
   {
     title: "Urban Forest Initiative",
     category: "Community",
-    description: "Planting and establishing 50+ trees as part of a city beautification project.",
+    description:
+      "Planting and establishing 50+ trees as part of a city beautification project.",
     image: "/placeholder.svg?height=600&width=800",
   },
   {
     title: "Residential Tree Removal",
     category: "Residential",
-    description: "Safe removal of hazardous trees from a confined residential space with minimal disruption.",
+    description:
+      "Safe removal of hazardous trees from a confined residential space with minimal disruption.",
     image: "/placeholder.svg?height=600&width=800",
   },
   {
     title: "Disease Management",
     category: "Health Care",
-    description: "Identification and treatment of oak wilt disease across multiple properties in a neighborhood.",
+    description:
+      "Identification and treatment of oak wilt disease across multiple properties in a neighborhood.",
     image: "/placeholder.svg?height=600&width=800",
   },
-]
+];
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState<number | null>(null)
-  const [filter, setFilter] = useState("All")
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.1 })
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const [filter, setFilter] = useState("All");
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
-  const categories = ["All", ...Array.from(new Set(projects.map((p) => p.category)))]
+  const categories = [
+    "All",
+    ...Array.from(new Set(projects.map((p) => p.category))),
+  ];
 
-  const filteredProjects = filter === "All" ? projects : projects.filter((project) => project.category === filter)
+  const filteredProjects =
+    filter === "All"
+      ? projects
+      : projects.filter((project) => project.category === filter);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -64,7 +83,7 @@ export default function Projects() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.9 },
@@ -75,16 +94,19 @@ export default function Projects() {
         duration: 0.5,
       },
     },
-  }
+  };
 
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Recent Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Our Recent Projects
+          </h2>
           <div className="w-24 h-1 bg-green-700 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Browse through our portfolio of successful tree care projects and see the quality of our work.
+            Browse through our portfolio of successful tree care projects and
+            see the quality of our work.
           </p>
 
           {/* Category Filter */}
@@ -94,7 +116,9 @@ export default function Projects() {
                 key={index}
                 variant={filter === category ? "default" : "outline"}
                 onClick={() => setFilter(category)}
-                className={filter === category ? "bg-green-700 hover:bg-green-800" : ""}
+                className={
+                  filter === category ? "bg-green-700 hover:bg-green-800" : ""
+                }
               >
                 {category}
               </Button>
@@ -126,9 +150,15 @@ export default function Projects() {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <span className="text-green-400 text-sm font-medium mb-2">{project.category}</span>
-                  <h3 className="text-white text-xl font-bold">{project.title}</h3>
-                  <p className="text-white/80 mt-2 text-sm line-clamp-2">{project.description}</p>
+                  <span className="text-green-400 text-sm font-medium mb-2">
+                    {project.category}
+                  </span>
+                  <h3 className="text-white text-xl font-bold">
+                    {project.title}
+                  </h3>
+                  <p className="text-white/80 mt-2 text-sm line-clamp-2">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -137,12 +167,17 @@ export default function Projects() {
       </div>
 
       {/* Project Detail Modal */}
-      <Dialog open={selectedProject !== null} onOpenChange={() => setSelectedProject(null)}>
+      <Dialog
+        open={selectedProject !== null}
+        onOpenChange={() => setSelectedProject(null)}
+      >
         <DialogContent className="max-w-4xl w-[90vw]">
           {selectedProject !== null && (
             <>
               <DialogHeader>
-                <DialogTitle className="text-2xl">{projects[selectedProject].title}</DialogTitle>
+                <DialogTitle className="text-2xl">
+                  {projects[selectedProject].title}
+                </DialogTitle>
                 <DialogDescription>
                   <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded text-sm mt-2">
                     {projects[selectedProject].category}
@@ -159,18 +194,28 @@ export default function Projects() {
                 />
               </div>
 
-              <p className="text-gray-700">{projects[selectedProject].description}</p>
+              <p className="text-gray-700">
+                {projects[selectedProject].description}
+              </p>
 
               <div className="flex justify-between mt-4">
                 <Button
                   variant="outline"
-                  onClick={() => setSelectedProject((prev) => (prev! > 0 ? prev! - 1 : projects.length - 1))}
+                  onClick={() =>
+                    setSelectedProject((prev) =>
+                      prev! > 0 ? prev! - 1 : projects.length - 1,
+                    )
+                  }
                 >
                   <ChevronLeft className="mr-2 h-4 w-4" /> Previous
                 </Button>
                 <Button
                   variant="outline"
-                  onClick={() => setSelectedProject((prev) => (prev! < projects.length - 1 ? prev! + 1 : 0))}
+                  onClick={() =>
+                    setSelectedProject((prev) =>
+                      prev! < projects.length - 1 ? prev! + 1 : 0,
+                    )
+                  }
                 >
                   Next <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -180,5 +225,5 @@ export default function Projects() {
         </DialogContent>
       </Dialog>
     </section>
-  )
+  );
 }
