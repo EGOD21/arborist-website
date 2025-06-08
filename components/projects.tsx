@@ -51,14 +51,16 @@ const projects = [
     category: "Residential",
     description:
       "Safe removal of hazardous trees from a confined residential space with minimal disruption.",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2Ff22b83164def4b65b92d5dd446526ee9",
   },
   {
     title: "Disease Management",
     category: "Health Care",
     description:
       "Identification and treatment of oak wilt disease across multiple properties in a neighborhood.",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2Fe28d3a96f6474918866f2ec980cbc650",
   },
 ];
 
