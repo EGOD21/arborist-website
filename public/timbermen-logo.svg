@@ -1,25 +1,22 @@
-<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="500" height="300" fill="#f8f8f8"/>
-  
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
   <!-- Main Text TIMBERMEN -->
-  <text x="25" y="180" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#000000">TIMBERMEN</text>
+  <text x="10" y="45" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#000000">TIMBERMEN</text>
   
   <!-- Subtitle TREE SERVICES -->
-  <text x="25" y="210" font-family="Arial, sans-serif" font-size="12" font-weight="normal" fill="#000000" letter-spacing="4">TREE SERVICES</text>
+  <text x="10" y="65" font-family="Arial, sans-serif" font-size="10" font-weight="normal" fill="#000000" letter-spacing="3">TREE SERVICES</text>
   
   <!-- Trees on the right -->
-  <g transform="translate(400, 50)">
-    <!-- Tree 1 - Dark green -->
-    <path d="M5 200 L5 150 M5 150 L-5 130 L15 130 Z M5 130 L-8 110 L18 110 Z M5 110 L-10 90 L20 90 Z" stroke="#2d5016" stroke-width="2" fill="#2d5016"/>
+  <g transform="translate(220, 10)">
+    <!-- Tree 1 - Dark green pine -->
+    <path d="M5 60 L5 45 M5 45 L-2 35 L12 35 Z M5 35 L-4 25 L14 25 Z M5 25 L-6 15 L16 15 Z" stroke="#1a3d0f" stroke-width="1.5" fill="#1a3d0f"/>
     
     <!-- Tree 2 - Medium green -->
-    <path d="M25 200 L25 140 M25 140 L15 120 L35 120 Z M25 120 L12 100 L38 100 Z M25 100 L10 80 L40 80 Z" stroke="#4a7c59" stroke-width="2" fill="#4a7c59"/>
+    <path d="M20 60 L20 40 M20 40 L13 30 L27 30 Z M20 30 L11 20 L29 20 Z M20 20 L9 10 L31 10 Z" stroke="#2d5016" stroke-width="1.5" fill="#2d5016"/>
     
-    <!-- Tree 3 - Light brown/tan -->
-    <path d="M45 200 L45 145 M45 145 L35 125 L55 125 Z M45 125 L32 105 L58 105 Z M45 105 L30 85 L60 85 Z" stroke="#8b7355" stroke-width="2" fill="#8b7355"/>
+    <!-- Tree 3 - Lighter green -->
+    <path d="M35 60 L35 42 M35 42 L28 32 L42 32 Z M35 32 L26 22 L44 22 Z M35 22 L24 12 L46 12 Z" stroke="#4a7c59" stroke-width="1.5" fill="#4a7c59"/>
     
-    <!-- Tree 4 - Darker pine -->
-    <path d="M65 200 L65 135 M65 135 L55 115 L75 115 Z M65 115 L52 95 L78 95 Z M65 95 L50 75 L80 75 Z M65 75 L48 55 L82 55 Z" stroke="#1a3d0f" stroke-width="2" fill="#1a3d0f"/>
+    <!-- Tree 4 - Golden brown -->
+    <path d="M50 60 L50 44 M50 44 L43 34 L57 34 Z M50 34 L41 24 L59 24 Z M50 24 L39 14 L61 14 Z" stroke="#8b7355" stroke-width="1.5" fill="#8b7355"/>
   </g>
 </svg>
