@@ -46,9 +46,9 @@ export default function Navbar() {
           <Image
             src="/timbermen-logo.svg"
             alt="TIMBERMEN TREE SERVICES"
-            width={200}
-            height={60}
-            className="h-10 w-auto"
+            width={300}
+            height={80}
+            className="h-12 w-auto"
           />
         </Link>
 
