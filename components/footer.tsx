@@ -21,9 +21,9 @@ export default function Footer() {
               <Image
                 src="/timbermen-logo.svg"
                 alt="TIMBERMEN TREE SERVICES"
-                width={200}
-                height={60}
-                className="h-8 w-auto brightness-0 invert"
+                width={300}
+                height={80}
+                className="h-10 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-gray-400 mb-6">
