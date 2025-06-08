@@ -1,33 +1,41 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { Button } from "@/components/ui/button"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Hero() {
-  const ref = useRef<HTMLDivElement>(null)
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
-  })
+  });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"])
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   const scrollToContact = () => {
-    const element = document.getElementById("contact")
+    const element = document.getElementById("contact");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
-    <div ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden">
+    <div
+      ref={ref}
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0 z-0">
         <motion.div
           style={{ y, opacity }}
-          className="w-full h-[120%] bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center"
+          className="w-full h-[120%] bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url(https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F0d69cafbcf5643d4bc082553ec8663ba)",
+            ...{ y, opacity },
+          }}
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>
@@ -44,16 +52,25 @@ export default function Hero() {
             Expert Tree Care for Your Property
           </h1>
           <p className="text-xl text-white/90 mb-8">
-            Professional arborist services with certified experts. We care for your trees with precision and passion.
+            Professional arborist services with certified experts. We care for
+            your trees with precision and passion.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button onClick={scrollToContact} size="lg" className="bg-green-700 hover:bg-green-800 text-white text-lg">
+            <Button
+              onClick={scrollToContact}
+              size="lg"
+              className="bg-green-700 hover:bg-green-800 text-white text-lg"
+            >
               Get a Free Quote
             </Button>
             <Button
               variant="outline"
               size="lg"
-              onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("services")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg"
             >
               Our Services
@@ -78,5 +95,5 @@ export default function Hero() {
         </div>
       </motion.div>
     </div>
-  )
+  );
 }
