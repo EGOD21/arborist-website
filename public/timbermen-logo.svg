@@ -1,0 +1,25 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="300" fill="#f8f8f8"/>
+  
+  <!-- Main Text TIMBERMEN -->
+  <text x="25" y="180" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#000000">TIMBERMEN</text>
+  
+  <!-- Subtitle TREE SERVICES -->
+  <text x="25" y="210" font-family="Arial, sans-serif" font-size="12" font-weight="normal" fill="#000000" letter-spacing="4">TREE SERVICES</text>
+  
+  <!-- Trees on the right -->
+  <g transform="translate(400, 50)">
+    <!-- Tree 1 - Dark green -->
+    <path d="M5 200 L5 150 M5 150 L-5 130 L15 130 Z M5 130 L-8 110 L18 110 Z M5 110 L-10 90 L20 90 Z" stroke="#2d5016" stroke-width="2" fill="#2d5016"/>
+    
+    <!-- Tree 2 - Medium green -->
+    <path d="M25 200 L25 140 M25 140 L15 120 L35 120 Z M25 120 L12 100 L38 100 Z M25 100 L10 80 L40 80 Z" stroke="#4a7c59" stroke-width="2" fill="#4a7c59"/>
+    
+    <!-- Tree 3 - Light brown/tan -->
+    <path d="M45 200 L45 145 M45 145 L35 125 L55 125 Z M45 125 L32 105 L58 105 Z M45 105 L30 85 L60 85 Z" stroke="#8b7355" stroke-width="2" fill="#8b7355"/>
+    
+    <!-- Tree 4 - Darker pine -->
+    <path d="M65 200 L65 135 M65 135 L55 115 L75 115 Z M65 115 L52 95 L78 95 Z M65 95 L50 75 L80 75 Z M65 75 L48 55 L82 55 Z" stroke="#1a3d0f" stroke-width="2" fill="#1a3d0f"/>
+  </g>
+</svg>

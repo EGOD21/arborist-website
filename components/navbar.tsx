@@ -1,47 +1,55 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Menu, X, TreesIcon as Tree } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setScrolled(true)
+        setScrolled(true);
       } else {
-        setScrolled(false)
+        setScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (id: string) => {
-    setIsOpen(false)
-    const element = document.getElementById(id)
+    setIsOpen(false);
+    const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled ? "bg-white/95 backdrop-blur-sm shadow-md py-2" : "bg-transparent py-4",
+        scrolled
+          ? "bg-white/95 backdrop-blur-sm shadow-md py-2"
+          : "bg-transparent py-4",
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <Tree className="h-8 w-8 text-green-700" />
-          <span className="font-bold text-xl text-gray-900">Arbor Experts</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/timbermen-logo.svg"
+            alt="TIMBERMEN TREE SERVICES"
+            width={200}
+            height={60}
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -70,13 +78,21 @@ export default function Navbar() {
           >
             Testimonials
           </button>
-          <Button onClick={() => scrollToSection("contact")} className="bg-green-700 hover:bg-green-800 text-white">
+          <Button
+            onClick={() => scrollToSection("contact")}
+            className="bg-green-700 hover:bg-green-800 text-white"
+          >
             Contact Us
           </Button>
         </nav>
 
         {/* Mobile Menu Button */}
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </Button>
       </div>
@@ -119,5 +135,5 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }
