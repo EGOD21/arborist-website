@@ -38,7 +38,7 @@ export default function About() {
           <div className="relative h-[500px] overflow-hidden rounded-lg shadow-xl">
             <motion.div style={{ y: y1, opacity }} className="absolute inset-0">
               <Image
-                src="https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F0d69cafbcf5643d4bc082553ec8663ba"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F667acbd18833409a980696fbd5e6a34f"
                 alt="Arborist at work"
                 fill
                 className="object-cover"

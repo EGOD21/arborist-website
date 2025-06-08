@@ -28,21 +28,23 @@ const projects = [
     description:
       "Complete tree management plan for a large office complex, including seasonal maintenance.",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F0d69cafbcf5643d4bc082553ec8663ba",
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F9de5a6f1b0364ddfa86061e87a4fa37d",
   },
   {
     title: "Storm Damage Recovery",
     category: "Emergency",
     description:
       "Emergency response and cleanup after severe storm damage to residential properties.",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2Fda762fe7dedd425d8faca4f65184d85d",
   },
   {
     title: "Urban Forest Initiative",
     category: "Community",
     description:
       "Planting and establishing 50+ trees as part of a city beautification project.",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F0fec91656b1a452989b8dd2a7d07c075",
   },
   {
     title: "Residential Tree Removal",
