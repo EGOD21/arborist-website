@@ -44,7 +44,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
-            src="https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F6d7519df2bae42df8a81568ea53650d7"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F553da30ee12a45bfa42ac21de9cc7b7c"
             alt="TIMBERMEN TREE SERVICES"
             width={300}
             height={80}
