@@ -19,7 +19,8 @@ const testimonials = [
   {
     name: "Michael Rodriguez",
     role: "Property Manager",
-    avatar: "/placeholder.svg?height=100&width=100",
+    avatar:
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F6d253daffbcd4056ad13b93b85ec19e7",
     content:
       "We've been using TIMBERMEN TREE SERVICES for all our commercial properties for over 5 years. Their attention to detail and knowledge of tree health is unmatched. They've helped us develop and maintain beautiful landscapes that our tenants love.",
     rating: 5,
