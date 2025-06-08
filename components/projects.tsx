@@ -20,7 +20,7 @@ const projects = [
     description:
       "Restoration and preservation of a 150-year-old oak tree in the city's historic district.",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F0d69cafbcf5643d4bc082553ec8663ba",
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2Ff7c64c9123174f3fb16a89c1cdb714e6",
   },
   {
     title: "Commercial Property Landscaping",

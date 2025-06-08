@@ -49,7 +49,7 @@ export default function About() {
               className="absolute -bottom-20 -right-20 w-64 h-64 rounded-lg overflow-hidden shadow-xl border-4 border-white"
             >
               <Image
-                src="/placeholder.svg?height=300&width=300"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2Fe05c84898b6d4236acf1d3e8389b9135"
                 alt="Close-up of tree care"
                 fill
                 className="object-cover"
