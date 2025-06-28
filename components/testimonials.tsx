@@ -9,36 +9,36 @@ import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Cathy Cox",
     role: "Homeowner",
     avatar: "https://i.imgur.com/e3Dg8am.png?height=100&width=100",
     content:
-      "The team at TIMBERMEN TREE SERVICES did an amazing job with our property. They removed three large trees that were dangerously close to our house with incredible precision. The cleanup was immaculate, and they were professional throughout the entire process.",
+      "These guys were terrific! We had 3 trees taken down and stumps ground; it took them less than an hour, cleanup included. Very professional and an impressive job.",
     rating: 5,
   },
   {
-    name: "Michael Rodriguez",
-    role: "Property Manager",
+    name: "Neb Harkhuf",
+    role: "Homeowner",
     avatar:
       "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F6d253daffbcd4056ad13b93b85ec19e7",
     content:
-      "We've been using TIMBERMEN TREE SERVICES for all our commercial properties for over 5 years. Their attention to detail and knowledge of tree health is unmatched. They've helped us develop and maintain beautiful landscapes that our tenants love.",
+      "I've utilized Timberman tree service several times now from removing 3 trees along with grinding out the stumps to a large stubborn area of brush and I have been impressed and greatly appreciative with how fast and affordable the work has been each time. Clint and his crew are professionals and the teamwork is fantastic and extremely efficient. I would absolutely recommend Timberman tree service if you want it done right!",
     rating: 5,
   },
   {
-    name: "Emily Chen",
+    name: "Corey Moran",
     role: "Homeowner",
     avatar: "https://i.imgur.com/i15Ou6K.png?height=100&width=100",
     content:
-      "After a storm damaged several trees in our yard, TIMBERMEN TREE SERVICES responded quickly and helped us assess the situation. They saved trees that other companies would have removed and were transparent about costs throughout the process.",
-    rating: 4,
+      "These guys are the best! I was watching them do my neighbors tree and was blown away on their efficiently. The boom truck, the shredder and everything, My tree is HUGE and they trimmed it and brought down monster pieces like butter. They didn't mess up my lawn, they were super caring and courteous and every single one of them worked like a machine. The lawn was cleaner than when they started! The price was super fair and I'll never call anyone else again! FOUR ACES!!! FIVE STARS!!",
+    rating: 5,
   },
   {
-    name: "David Thompson",
-    role: "HOA President",
+    name: "Vivian Bright",
+    role: "Homeowner",
     avatar: "https://i.imgur.com/fxdDU4N.png?height=100&width=100",
     content:
-      "Our community has worked with TIMBERMEN TREE SERVICES for our annual tree maintenance program. They're always on schedule, communicate effectively, and have helped us preserve our neighborhood's beautiful tree canopy while ensuring safety.",
+      "Clint and his team were outstanding! They worked quickly, with respect, and very professional!! They were great from start to cleanup. I highly recommend them.",
     rating: 5,
   },
 ];
@@ -82,12 +82,11 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What Our Clients Say
+            See the Results: Clean Yards, Safer Trees, Peace of Mind
           </h2>
           <div className="w-24 h-1 bg-green-700 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers
-            have to say about our services.
+            Our customers love the transformation of their properties and the peace of mind that comes with professional tree care.
           </p>
         </div>
 

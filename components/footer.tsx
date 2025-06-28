@@ -27,8 +27,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 mb-6">
-              Professional tree care services with certified arborists. Serving
-              residential and commercial properties since 2008.
+              Professional tree care services with expert specialists. Serving
+              residential and commercial properties since 2021.
             </p>
             <div className="flex gap-4">
               <Link

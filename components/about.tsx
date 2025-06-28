@@ -17,12 +17,12 @@ export default function About() {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
   const benefits = [
-    "Certified Arborists with 15+ years of experience",
-    "Fully insured and licensed professionals",
-    "Eco-friendly practices and sustainable solutions",
-    "State-of-the-art equipment for safe operations",
-    "Transparent pricing with no hidden fees",
-    "Committed to customer satisfaction",
+    "Licensed & Insured professionals you can trust",
+    "Safety Certified with 3+ years of experience",
+    "Local & Family-Owned business that cares",
+    "We educate customers before every cut",
+    "Photos before cutting for your peace of mind",
+    "Clean, on-time service you can count on",
   ];
 
   return (
@@ -60,22 +60,16 @@ export default function About() {
           {/* Content Column */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              About TIMBERMEN TREE SERVICES
+              Your Trusted Tree Care Professionals
             </h2>
             <div className="w-20 h-1 bg-green-700 mb-8"></div>
 
             <p className="text-gray-700 mb-6 text-lg">
-              With over 15 years of experience in the arboriculture industry,
-              TIMBERMEN TREE SERVICES has been providing exceptional tree care
-              services to residential and commercial properties throughout the
-              region.
+              As your local, family-owned tree care professionals, we understand the stress and uncertainty that comes with tree problems. That's why we've built our reputation on trust, education, and peace of mind.
             </p>
 
             <p className="text-gray-700 mb-8 text-lg">
-              Our team of certified arborists combines scientific knowledge with
-              practical expertise to deliver solutions that maintain the health
-              and beauty of your trees while ensuring the safety of your
-              property.
+              We don't just show up and start cutting. We take time to educate you about your trees, show you photos before we make any cuts, and ensure you're completely comfortable with our plan. Our clean, on-time service means you can relax knowing your property is in capable hands.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

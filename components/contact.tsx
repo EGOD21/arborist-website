@@ -35,10 +35,10 @@ export default function Contact() {
     <div id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Your Free Quote Today</h2>
           <div className="w-24 h-1 bg-green-700 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have questions or ready to schedule a consultation? Reach out to our team of certified arborists today.
+            Ready to reclaim your property? Get a free quote or call us now - we're here to help transform your outdoor space.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export default function Contact() {
           >
             <Card className="shadow-lg border-green-100">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
+                <h3 className="text-2xl font-bold mb-6">Get Your Free Quote</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -104,11 +104,22 @@ export default function Contact() {
                       "Processing..."
                     ) : (
                       <>
-                        <Send className="mr-2 h-4 w-4" /> Send Message
+                        <Send className="mr-2 h-4 w-4" /> Get My Free Quote
                       </>
                     )}
                   </Button>
                 </form>
+                
+                <div className="mt-6 text-center">
+                  <p className="text-gray-600 mb-3">Or call us directly for immediate assistance</p>
+                  <Button 
+                    onClick={() => window.open("tel:417-840-7907", "_self")}
+                    variant="outline" 
+                    className="w-full border-green-700 text-green-700 hover:bg-green-700 hover:text-white"
+                  >
+                    <Phone className="mr-2 h-4 w-4" /> Call Now: (417) 840-7907
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </motion.div>

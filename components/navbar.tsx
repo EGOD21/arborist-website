@@ -82,7 +82,7 @@ export default function Navbar() {
             onClick={() => scrollToSection("contact")}
             className="bg-green-700 hover:bg-green-800 text-white"
           >
-            Contact Us
+            Get a Free Quote
           </Button>
         </nav>
 
@@ -129,7 +129,7 @@ export default function Navbar() {
               onClick={() => scrollToSection("contact")}
               className="bg-green-700 hover:bg-green-800 text-white w-full"
             >
-              Contact Us
+              Get a Free Quote
             </Button>
           </nav>
         </div>

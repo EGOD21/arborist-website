@@ -49,11 +49,10 @@ export default function Hero() {
           className="max-w-3xl mx-auto"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Expert Tree Care for Your Property
+            Your Trees Should Be Safe, Clean, and Taken Care Of
           </h1>
           <p className="text-xl text-white/90 mb-8">
-            Professional arborist services with certified experts. We care for
-            your trees with precision and passion.
+            Don't live with danger or mess — Timbermen Tree Services helps you reclaim your property with professional tree care you can trust.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -66,14 +65,10 @@ export default function Hero() {
             <Button
               variant="outline"
               size="lg"
-              onClick={() =>
-                document
-                  .getElementById("services")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
+              onClick={() => window.open("tel:417-840-7907", "_self")}
               className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg"
             >
-              Our Services
+              Call Now
             </Button>
           </div>
         </motion.div>
