@@ -18,27 +18,43 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json"
+        },
+        body: new FormData(e.currentTarget)
+      });
 
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you as soon as possible.",
-    });
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "We'll get back to you as soon as possible.",
+        });
+        e.currentTarget.reset();
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or call us directly.",
+        variant: "destructive",
+      });
+    }
 
     setIsSubmitting(false);
-    // Reset form
-    e.currentTarget.reset();
   };
 
   return (
     <div id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Your Free Quote Today</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Book Your Service Today</h2>
           <div className="w-24 h-1 bg-green-700 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ready to reclaim your property? Get a free quote or call us now - we're here to help transform your outdoor space.
+            Ready to reclaim your property? Book your service or call us now - we're here to help transform your outdoor space.
           </p>
         </div>
 
@@ -52,7 +68,7 @@ export default function Contact() {
           >
             <Card className="shadow-lg border-green-100">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-6">Get Your Free Quote</h3>
+                <h3 className="text-2xl font-bold mb-6">Book Your Service</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -104,7 +120,7 @@ export default function Contact() {
                       "Processing..."
                     ) : (
                       <>
-                        <Send className="mr-2 h-4 w-4" /> Get My Free Quote
+                        <Send className="mr-2 h-4 w-4" /> Book Now
                       </>
                     )}
                   </Button>
@@ -167,8 +183,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-medium text-lg">Office Location</h4>
-                    <p className="text-gray-600">123 Tree Lane</p>
-                    <p className="text-gray-600">Greenville, GA 30303</p>
+                    <p className="text-gray-600">2132 W Arlington St</p>
+                    <p className="text-gray-600">Springfield, MO 65810</p>
                   </div>
                 </div>
 
@@ -178,8 +194,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-medium text-lg">Business Hours</h4>
-                    <p className="text-gray-600">Monday-Friday: 8am-6pm</p>
-                    <p className="text-gray-600">Saturday: 9am-3pm</p>
+                    <p className="text-gray-600">Monday-Friday: 8am-5pm</p>
+                    <p className="text-gray-600">Saturday: Closed</p>
                     <p className="text-gray-600">Sunday: Closed</p>
                   </div>
                 </div>

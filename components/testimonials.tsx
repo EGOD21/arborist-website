@@ -11,7 +11,7 @@ const testimonials = [
   {
     name: "Cathy Cox",
     role: "Homeowner",
-    avatar: "https://i.imgur.com/e3Dg8am.png?height=100&width=100",
+    avatar: "https://i.imgur.com/LiGy6Ni.png",
     content:
       "These guys were terrific! We had 3 trees taken down and stumps ground; it took them less than an hour, cleanup included. Very professional and an impressive job.",
     rating: 5,
@@ -19,8 +19,7 @@ const testimonials = [
   {
     name: "Neb Harkhuf",
     role: "Homeowner",
-    avatar:
-      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F6d253daffbcd4056ad13b93b85ec19e7",
+    avatar: "https://i.imgur.com/FzmaEZW.png",
     content:
       "I've utilized Timberman tree service several times now from removing 3 trees along with grinding out the stumps to a large stubborn area of brush and I have been impressed and greatly appreciative with how fast and affordable the work has been each time. Clint and his crew are professionals and the teamwork is fantastic and extremely efficient. I would absolutely recommend Timberman tree service if you want it done right!",
     rating: 5,
@@ -28,7 +27,7 @@ const testimonials = [
   {
     name: "Corey Moran",
     role: "Homeowner",
-    avatar: "https://i.imgur.com/i15Ou6K.png?height=100&width=100",
+    avatar: "https://i.imgur.com/tiNikc5.png",
     content:
       "These guys are the best! I was watching them do my neighbors tree and was blown away on their efficiently. The boom truck, the shredder and everything, My tree is HUGE and they trimmed it and brought down monster pieces like butter. They didn't mess up my lawn, they were super caring and courteous and every single one of them worked like a machine. The lawn was cleaner than when they started! The price was super fair and I'll never call anyone else again! FOUR ACES!!! FIVE STARS!!",
     rating: 5,
@@ -36,7 +35,7 @@ const testimonials = [
   {
     name: "Vivian Bright",
     role: "Homeowner",
-    avatar: "https://i.imgur.com/fxdDU4N.png?height=100&width=100",
+    avatar: "https://i.imgur.com/N0H5v4n.png",
     content:
       "Clint and his team were outstanding! They worked quickly, with respect, and very professional!! They were great from start to cleanup. I highly recommend them.",
     rating: 5,

@@ -60,7 +60,7 @@ export default function Hero() {
               size="lg"
               className="bg-green-700 hover:bg-green-800 text-white text-lg"
             >
-              Get a Free Quote
+              Book Now
             </Button>
             <Button
               variant="outline"
