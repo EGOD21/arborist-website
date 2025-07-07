@@ -1,0 +1,22 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Text TIMBERMEN -->
+  <text x="10" y="45" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#000000">TIMBERMEN</text>
+  
+  <!-- Subtitle TREE SERVICES -->
+  <text x="10" y="65" font-family="Arial, sans-serif" font-size="10" font-weight="normal" fill="#000000" letter-spacing="3">TREE SERVICES</text>
+  
+  <!-- Trees on the right -->
+  <g transform="translate(220, 10)">
+    <!-- Tree 1 - Dark green pine -->
+    <path d="M5 60 L5 45 M5 45 L-2 35 L12 35 Z M5 35 L-4 25 L14 25 Z M5 25 L-6 15 L16 15 Z" stroke="#1a3d0f" stroke-width="1.5" fill="#1a3d0f"/>
+    
+    <!-- Tree 2 - Medium green -->
+    <path d="M20 60 L20 40 M20 40 L13 30 L27 30 Z M20 30 L11 20 L29 20 Z M20 20 L9 10 L31 10 Z" stroke="#2d5016" stroke-width="1.5" fill="#2d5016"/>
+    
+    <!-- Tree 3 - Lighter green -->
+    <path d="M35 60 L35 42 M35 42 L28 32 L42 32 Z M35 32 L26 22 L44 22 Z M35 22 L24 12 L46 12 Z" stroke="#4a7c59" stroke-width="1.5" fill="#4a7c59"/>
+    
+    <!-- Tree 4 - Golden brown -->
+    <path d="M50 60 L50 44 M50 44 L43 34 L57 34 Z M50 34 L41 24 L59 24 Z M50 24 L39 14 L61 14 Z" stroke="#8b7355" stroke-width="1.5" fill="#8b7355"/>
+  </g>
+</svg>
