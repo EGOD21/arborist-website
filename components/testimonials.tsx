@@ -9,35 +9,35 @@ import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
-    name: "Cathy Cox",
+    name: "Josh Mhire",
     role: "Homeowner",
-    avatar: "https://i.imgur.com/LiGy6Ni.png",
+    avatar: "https://i.imgur.com/W0PjEcc.png",
     content:
-      "These guys were terrific! We had 3 trees taken down and stumps ground; it took them less than an hour, cleanup included. Very professional and an impressive job.",
+      "Timbermen Tree Service is the way to go if you want quality work for a reasonable price, and I promise you, they're worth the money. Our trees had been giving us trouble for years, falling on our house, damaging our roof and gutters, and nearly hitting our cars and our neighbor's house. After a really bad experience with a tree service company that did a terrible job "trimming" our trees, working with Timbermen was so refreshing. Christian and his dad were so kind and knowledgeable, and they were incredibly considerate of our home and even our neighbor's home to make sure the job was done well and safely. They did a phenomenal job clearing out our trees, and it's a huge relief knowing they won't be around this coming winter to cause more damage.",
     rating: 5,
   },
   {
-    name: "Neb Harkhuf",
+    name: "Daniel Hoppman",
     role: "Homeowner",
-    avatar: "https://i.imgur.com/FzmaEZW.png",
+    avatar: "https://i.imgur.com/QVMOiA3.png",
     content:
-      "I've utilized Timberman tree service several times now from removing 3 trees along with grinding out the stumps to a large stubborn area of brush and I have been impressed and greatly appreciative with how fast and affordable the work has been each time. Clint and his crew are professionals and the teamwork is fantastic and extremely efficient. I would absolutely recommend Timberman tree service if you want it done right!",
+      "Christian and his dad were extremely professional and courteous. They provide excellent service for more than a reasonable price. This monster of a sycamore was long over due and Timberman Tree Service cleaned it up safely and efficiently. I would use them again in the future and recommend them to anyone in need of their services.",
     rating: 5,
   },
   {
-    name: "Corey Moran",
+    name: "Nathan Ziegler",
     role: "Homeowner",
-    avatar: "https://i.imgur.com/tiNikc5.png",
+    avatar: "https://i.imgur.com/BoMHoCc.png",
     content:
-      "These guys are the best! I was watching them do my neighbors tree and was blown away on their efficiently. The boom truck, the shredder and everything, My tree is HUGE and they trimmed it and brought down monster pieces like butter. They didn't mess up my lawn, they were super caring and courteous and every single one of them worked like a machine. The lawn was cleaner than when they started! The price was super fair and I'll never call anyone else again! FOUR ACES!!! FIVE STARS!!",
+      "Christian has done work for me at three different properties and is the absolute best in the business. He is always on schedule, can fall a tree or limb exactly where he wants it to go, and spends ample time cleaning up. He goes above and beyond in every way. He is professional and thoughtful. I would never use anyone else for my tree trimming and tree cutting needs.",
     rating: 5,
   },
   {
-    name: "Vivian Bright",
+    name: "Rachael Schreve",
     role: "Homeowner",
-    avatar: "https://i.imgur.com/N0H5v4n.png",
+    avatar: "https://i.imgur.com/78jjnp1.png",
     content:
-      "Clint and his team were outstanding! They worked quickly, with respect, and very professional!! They were great from start to cleanup. I highly recommend them.",
+      "When a tree came down on my house during a storm, Christian and Todd came out that same day! They removed the tree, tarped my roof to prevent more damage, and left my yard SPOTLESS! Not even a twig left behind! They were fast, professional, and did amazing work. Highly recommend them!"
     rating: 5,
   },
 ];
