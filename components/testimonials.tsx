@@ -13,7 +13,7 @@ const testimonials = [
     role: "Homeowner",
     avatar: "https://i.imgur.com/W0PjEcc.png",
     content:
-      "Timbermen Tree Service is the way to go if you want quality work for a reasonable price, and I promise you, they're worth the money. Our trees had been giving us trouble for years, falling on our house, damaging our roof and gutters, and nearly hitting our cars and our neighbor's house. After a really bad experience with a tree service company that did a terrible job "trimming" our trees, working with Timbermen was so refreshing. Christian and his dad were so kind and knowledgeable, and they were incredibly considerate of our home and even our neighbor's home to make sure the job was done well and safely. They did a phenomenal job clearing out our trees, and it's a huge relief knowing they won't be around this coming winter to cause more damage.",
+      "Timbermen Tree Service is the way to go if you want quality work for a reasonable price, and I promise you, they're worth the money. Our trees had been giving us trouble for years, falling on our house, damaging our roof and gutters, and nearly hitting our cars and our neighbor's house. After a really bad experience with a tree service company that did a terrible job trimming our trees, working with Timbermen was so refreshing. Christian and his dad were so kind and knowledgeable, and they were incredibly considerate of our home and even our neighbor's home to make sure the job was done well and safely. They did a phenomenal job clearing out our trees, and it's a huge relief knowing they won't be around this coming winter to cause more damage.",
     rating: 5,
   },
   {
