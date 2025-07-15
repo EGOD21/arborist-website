@@ -37,7 +37,7 @@ const testimonials = [
     role: "Homeowner",
     avatar: "https://i.imgur.com/78jjnp1.png",
     content:
-      "When a tree came down on my house during a storm, Christian and Todd came out that same day! They removed the tree, tarped my roof to prevent more damage, and left my yard SPOTLESS! Not even a twig left behind! They were fast, professional, and did amazing work. Highly recommend them!"
+      "When a tree came down on my house during a storm, Christian and Todd came out that same day! They removed the tree, tarped my roof to prevent more damage, and left my yard SPOTLESS! Not even a twig left behind! They were fast, professional, and did amazing work. Highly recommend them!",
     rating: 5,
   },
 ];
