@@ -77,26 +77,26 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-green-50">
+    <section id="testimonials" className="py-12 md:py-20 bg-green-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
             See the Results: Clean Yards, Safer Trees, Peace of Mind
           </h2>
           <div className="w-24 h-1 bg-green-700 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4">
             Our customers love the transformation of their properties and the peace of mind that comes with professional tree care.
           </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
           {/* Large Quote Icon */}
-          <div className="absolute -top-10 left-0 opacity-10">
-            <Quote className="h-24 w-24 text-green-700" />
+          <div className="absolute -top-6 md:-top-10 left-0 opacity-10">
+            <Quote className="h-16 w-16 md:h-24 md:w-24 text-green-700" />
           </div>
 
           {/* Testimonial Carousel */}
-          <div className="relative h-[400px] md:h-[300px]">
+          <div className="relative min-h-[500px] md:min-h-[300px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
@@ -106,10 +106,10 @@ export default function Testimonials() {
                 transition={{ duration: 0.5 }}
                 className="absolute inset-0"
               >
-                <Card className="h-full shadow-lg border-green-100">
-                  <CardContent className="flex flex-col md:flex-row gap-6 h-full p-8">
-                    <div className="flex flex-col items-center md:items-start">
-                      <Avatar className="h-20 w-20 border-2 border-green-100">
+                <Card className="shadow-lg border-green-100">
+                  <CardContent className="flex flex-col md:flex-row gap-4 md:gap-6 p-4 md:p-8">
+                    <div className="flex flex-col items-center md:items-start md:min-w-[200px]">
+                      <Avatar className="h-16 w-16 md:h-20 md:w-20 border-2 border-green-100">
                         <AvatarImage
                           src={
                             testimonials[current].avatar || "/placeholder.svg"
@@ -120,11 +120,11 @@ export default function Testimonials() {
                           {testimonials[current].name.charAt(0)}
                         </AvatarFallback>
                       </Avatar>
-                      <div className="mt-4 text-center md:text-left">
-                        <h4 className="font-bold text-lg">
+                      <div className="mt-3 md:mt-4 text-center md:text-left">
+                        <h4 className="font-bold text-base md:text-lg">
                           {testimonials[current].name}
                         </h4>
-                        <p className="text-gray-500">
+                        <p className="text-gray-500 text-sm md:text-base">
                           {testimonials[current].role}
                         </p>
                         <div className="flex justify-center md:justify-start mt-2">
@@ -142,7 +142,7 @@ export default function Testimonials() {
                       </div>
                     </div>
                     <div className="flex-1 flex items-center">
-                      <p className="text-gray-700 italic text-lg">
+                      <p className="text-gray-700 italic text-base md:text-lg leading-relaxed">
                         "{testimonials[current].content}"
                       </p>
                     </div>
@@ -153,14 +153,14 @@ export default function Testimonials() {
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex justify-center mt-8 gap-4">
+          <div className="flex justify-center mt-6 md:mt-8 gap-2 md:gap-4">
             <Button
               variant="outline"
               size="icon"
               onClick={() => handleManualNavigation(prevTestimonial)}
-              className="rounded-full"
+              className="rounded-full h-8 w-8 md:h-10 md:w-10"
             >
-              <ChevronLeft className="h-5 w-5" />
+              <ChevronLeft className="h-4 w-4 md:h-5 md:w-5" />
             </Button>
 
             {testimonials.map((_, index) => (
@@ -169,7 +169,7 @@ export default function Testimonials() {
                 variant="ghost"
                 size="sm"
                 onClick={() => handleManualNavigation(() => setCurrent(index))}
-                className={`w-3 h-3 p-0 rounded-full ${current === index ? "bg-green-700" : "bg-gray-300"}`}
+                className={`w-2 h-2 md:w-3 md:h-3 p-0 rounded-full ${current === index ? "bg-green-700" : "bg-gray-300"}`}
               >
                 <span className="sr-only">Go to testimonial {index + 1}</span>
               </Button>
@@ -179,9 +179,9 @@ export default function Testimonials() {
               variant="outline"
               size="icon"
               onClick={() => handleManualNavigation(nextTestimonial)}
-              className="rounded-full"
+              className="rounded-full h-8 w-8 md:h-10 md:w-10"
             >
-              <ChevronRight className="h-5 w-5" />
+              <ChevronRight className="h-4 w-4 md:h-5 md:w-5" />
             </Button>
           </div>
         </div>
