@@ -53,6 +53,14 @@ const projects: Project[] = [
     ],
   },
   {
+    title: "Firewood Processing & Delivery",
+    category: "Firewood",
+    description:
+      "Professional firewood cutting, splitting, and delivery service providing seasoned hardwood for residential heating needs.",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2F8e7f9a12d3a64f2b9c5e8f1a2b3c4d5e",
+  },
+  {
     title: "Commercial Tree Removal",
     category: "Commercial",
     description:
