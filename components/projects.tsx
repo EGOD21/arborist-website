@@ -58,7 +58,7 @@ const projects: Project[] = [
     description:
       "Professional firewood cutting, splitting, and delivery service providing seasoned hardwood for residential heating needs.",
     image:
-      "blob:https://imgur.com/4f0e5e4f-36e9-481a-a514-ca15e367ad2c",
+      "https://imgur.com/wxEpSIV.jpg",
   },
   {
     title: "Commercial Tree Removal",
