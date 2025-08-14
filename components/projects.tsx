@@ -229,7 +229,7 @@ export default function Projects() {
                             src={img}
                             alt={`${projects[selectedProject].title} ${index + 1}`}
                             fill
-                            className="object-cover rounded-md"
+                            className="object-cover rounded-md object-bottom"
                           />
                         </div>
                       </CarouselItem>
