@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Instagram, Twitter, Linkedin, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { WatermarkFooter } from "@/components/WatermarkFooter";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -213,19 +214,19 @@ export default function Footer() {
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link
-              href="#"
+              href="/privacy-policy"
               className="text-gray-400 hover:text-white text-sm transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="/terms-of-service"
               className="text-gray-400 hover:text-white text-sm transition-colors"
             >
               Terms of Service
             </Link>
             <Link
-              href="#"
+              href="/site-map"
               className="text-gray-400 hover:text-white text-sm transition-colors"
             >
               Sitemap
@@ -233,6 +234,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Watermark Attribution */}
+      <WatermarkFooter />
 
       {/* Scroll to Top Button */}
       <Button
