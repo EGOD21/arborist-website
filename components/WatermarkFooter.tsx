@@ -8,7 +8,7 @@ interface WatermarkFooterProps {
 }
 
 export function WatermarkFooter({ className = '' }: WatermarkFooterProps) {
-  const [egiHovered, setEgiHovered] = useState(false);
+  const [omwHovered, setOmwHovered] = useState(false);
   const [anchorHovered, setAnchorHovered] = useState(false);
 
   return (
@@ -16,18 +16,18 @@ export function WatermarkFooter({ className = '' }: WatermarkFooterProps) {
       <div className="flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm">
         <span className="text-gray-900 opacity-70">Built by</span>
         <a
-          href="https://egintegrations.com/badge"
+          href="https://www.onemoreweb.co/watermark"
           target="_blank"
           rel="noopener noreferrer"
           className="relative inline-block opacity-60 hover:opacity-100 transition-opacity duration-300 -mr-2"
-          aria-label="Visit EGI Integrations website"
-          onMouseEnter={() => setEgiHovered(true)}
-          onMouseLeave={() => setEgiHovered(false)}
+          aria-label="Visit One More Web website"
+          onMouseEnter={() => setOmwHovered(true)}
+          onMouseLeave={() => setOmwHovered(false)}
         >
           {/* Base layer - original image */}
           <Image
-            src="/watermarks/egi-logo.png"
-            alt="EGI Integrations"
+            src="/watermarks/onemoreweb-logo.svg"
+            alt="One More Web"
             width={140}
             height={46}
             className="h-auto max-w-[140px]"
@@ -39,14 +39,14 @@ export function WatermarkFooter({ className = '' }: WatermarkFooterProps) {
             style={{
               position: 'absolute',
               inset: 0,
-              background: '#3ec3e0',
-              opacity: egiHovered ? 1 : 0,
+              background: '#ff6b35',
+              opacity: omwHovered ? 1 : 0,
               transition: 'opacity 300ms ease',
-              WebkitMaskImage: 'url(/watermarks/egi-logo.png)',
+              WebkitMaskImage: 'url(/watermarks/onemoreweb-logo.svg)',
               WebkitMaskSize: 'contain',
               WebkitMaskRepeat: 'no-repeat',
               WebkitMaskPosition: 'center',
-              maskImage: 'url(/watermarks/egi-logo.png)',
+              maskImage: 'url(/watermarks/onemoreweb-logo.svg)',
               maskSize: 'contain',
               maskRepeat: 'no-repeat',
               maskPosition: 'center',

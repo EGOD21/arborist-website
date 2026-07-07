@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
+  <title id="title">One More Web wordmark</title>
+  <desc id="desc">Lowercase one more web wordmark with a plus one symbol.</desc>
+  <defs>
+    <mask id="plus-cutout">
+      <rect x="24" y="24" width="72" height="72" fill="white"/>
+      <text x="60" y="70" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="28" font-weight="800" fill="black">+1</text>
+    </mask>
+  </defs>
+  <rect x="24" y="24" width="72" height="72" fill="#11110f" mask="url(#plus-cutout)"/>
+  <text x="118" y="73" font-family="Inter, Geist, Arial, sans-serif" font-size="46" font-weight="800" fill="#11110f">one more web</text>
+  <path d="M119 90h276" stroke="#11110f" stroke-width="7" stroke-linecap="square"/>
+</svg>
