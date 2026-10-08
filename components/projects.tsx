@@ -74,7 +74,7 @@ const projects: Project[] = [
     description:
       "Safe removal of hazardous trees from a confined residential space with minimal disruption.",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2Ff22b83164def4b65b92d5dd446526ee9",
+      "/residential-7882.jpg",
     images: [
       "/residential-7882.jpg",
       "/residential-7885.jpg", 
@@ -88,7 +88,7 @@ const projects: Project[] = [
     description:
       "Careful trimming and removal of land plots, including bushes, trees, and grass (not mowing).",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2Fb11935c5315c460ba00f1e3a1c6658c4%2Fe28d3a96f6474918866f2ec980cbc650",
+      "/land-cleanup.jpg",
   },
 ];
 
